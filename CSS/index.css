@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    color: #000;
+  }
+  
+  .header {
+    background-color: rgba(0, 0, 0, 0.321);
+    width: 100%;
+    z-index: 3;
+    height: 80px;
+  }
+
+  .header .logo img{
+    width: 60px;
+    height: 60px;
+  }
+  
+  .logo{
+    font-size:30px;
+    font-style: bold;
+    float: left;
+    color: white;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-family: "Brush Script MT", cursive;
+  }
+  
+  header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  header li {
+    display: inline-block;
+    float: left;
+  }
+  
+  .listitem{
+    display: flex;
+    float: right;
+  }
+  
+  header li a {
+    display: block;
+    color: black;
+    margin-right: 60px;
+    text-decoration: none;
+  }
+  
+  .logo{
+    width: 120px;
+  }
+  
+  .menu li:hover a {
+    transform: translatex(25%);
+    color: red;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: white;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 300px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
+  section{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 650px;
+    background: url(https://free4kwallpapers.com/uploads/originals/2015/11/15/abstract-color-background-picture-8016-wallpaper.jpg);
+    background-size: cover;
+  }
+
+  section div h1{
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+  }
+
+  section div img{
+    width: 200px;
+    height: 250px;
+    border-radius: 30px;
+    margin-left: 45%;
+    margin-top: 30px;
+  }
+
+  footer{
+    width: 100%;
+    height: 400px;
+    color: #000;
+  }
+
+  footer .div1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  footer .div1 h1{
+    font-size: 30px;
+  }
+
+  footer .div1 p{
+    padding: 20px 0;
+    font-size: 20px;
+  }
+
+  .div2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .div2 a img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    padding: 10px;
+    margin: 30px 30px 0;
+  }
+
+  .div3 h3{
+    text-align: center;
+    padding: 50px 0 0;
+  }
+
+
+
+
+  /*//////////MEDIA QUIERIES//////////*/
+
+  @media (min-width: 1024px){
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      /* float: right; */
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+
+    section{
+      width: 100%;
+    }
+}
