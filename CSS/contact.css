@@ -161,7 +161,7 @@
   }
 
   .sec1 .div1 p span{
-    color: green;
+    color: rgb(20, 66, 20);
   }
 
   .sec2{
@@ -297,4 +297,167 @@
     .header .menu-icon {
       display: none;
     }
+    .sec2 .div3 form{
+      position: relative;
+      left: -25vw;
+    }
+    .sec2 .div3 form input{
+      width: 30vw;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 768px){
+  .listitem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(94, 81, 152);
+    z-index: 9999;
+    width: 100%;
+  }  
+
+  .header li{
+    /* float: left; */
+    z-index: 9999;
+  }
+
+  .header li a {
+    padding: 20px 30px;
+    /* margin: 0 300px 0 0; */
+    display: block;
+    z-index: 9999;
+    color: white;
+  } 
+  .sec2 .div3 form{
+    position: relative;
+    left: -45vw;
+  }
+  .sec2 .div3 form input{
+    width: 30vw;
+  }
+  .sec2 .div1 .div2{
+    position: relative;
+    top: 10vh;
+    left: 30vw;
+    height: 200px;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 425px){
+  .listitem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(94, 81, 152);
+    z-index: 9999;
+    width: 100%;
+  }  
+
+  .header li{
+    /* float: left; */
+    z-index: 9999;
+  }
+
+  .header li a {
+    padding: 20px 30px;
+    /* margin: 0 300px 0 0; */
+    display: block;
+    z-index: 9999;
+    color: white;
+  } 
+  .sec1{
+    width: 100%;
+  }
+  
+  .sec1 .div1 h1,p{
+    width: 400px;
+  }
+
+  .sec2{
+    width: 100%;
+  }
+  .sec2 .div3 form{
+    position: relative;
+    left: -75vw;
+    width: 80vw;
+  }
+  .sec2 .div1 .div2{
+    position: relative;
+    top: 30vh;
+    left: 0vw;
+    height: 200px;
+  }
+
+  .sec2 .div3{
+    margin: 0;
+  }
+  footer{
+    width: 100%;
+    height: 700px;
+  }
+  footer .div2{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 424px) and (min-width: 375px){
+  .listitem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(94, 81, 152);
+    z-index: 9999;
+    width: 100%;
+  }  
+
+  .header li{
+    /* float: left; */
+    z-index: 9999;
+  }
+
+  .header li a {
+    padding: 20px 30px;
+    /* margin: 0 300px 0 0; */
+    display: block;
+    z-index: 9999;
+    color: white;
+  } 
+  .sec1{
+    width: 100%;
+  }
+  
+  .sec1 .div1 h1,p{
+    width: 400px;
+  }
+
+  .sec2{
+    width: 100%;
+  }
+  .sec2 .div3 form{
+    position: relative;
+    left: -95vw;
+    width: 90vw;
+  }
+  .sec2 .div1 .div2{
+    position: relative;
+    top: 35vh;
+    left: -10vw;
+    height: 200px;
+  }
+
+  .sec2 .div3{
+    margin: 0;
+  }
+  footer{
+    width: 100%;
+    height: 700px;
+  }
+  footer .div2{
+    display: flex;
+    flex-direction: column;
+  }
 }
