@@ -282,7 +282,7 @@
 
   /*//////////MEDIA QUIERIES//////////*/
 
-  @media (min-width: 1024px){
+  @media (max-width: 2560px) and (min-width: 1024px){
     .header li {
       float: left;
     }
@@ -299,7 +299,7 @@
     }
     .sec2 .div3 form{
       position: relative;
-      left: -25vw;
+      left: -10vw;
     }
     .sec2 .div3 form input{
       width: 30vw;

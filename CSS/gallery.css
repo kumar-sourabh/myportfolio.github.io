@@ -160,6 +160,13 @@
     justify-content: center;
   }
 
+  .sec1 .div1 .div4{
+    position: relative;
+    left: -5vw;
+    display: flex;
+    justify-content: center;
+  }
+
   .sec1 .div1 img{
     width: 400px;
     padding: 15px;
@@ -241,7 +248,22 @@
     }
 
     .sec1 .div1 img{
-      width: 300px;
+      width: 260px;
+    }
+    .sec1 .div1 .div2{
+      display: flex;
+      position: relative;
+      left: -9vw;
+    }
+    .sec1 .div1 .div3{
+      display: flex;
+      position: relative;
+      left: -9vw;
+    }
+    .sec1 .div1 .div4{
+      display: flex;
+      position: relative;
+      left: -9vw;
     }
 }
 
@@ -273,7 +295,22 @@
       width: 100%;
     }
     .sec1 .div1 img{
-      width: 200px;
+      width: 190px;
+    }
+    .sec1 .div1 .div2{
+      display: flex;
+      position: relative;
+      left: -10vw;
+    }
+    .sec1 .div1 .div3{
+      display: flex;
+      position: relative;
+      left: -10vw;
+    }
+    .sec1 .div1 .div4{
+      display: flex;
+      position: relative;
+      left: -10vw;
     }
     footer{
       width: 100%;
@@ -329,6 +366,13 @@
   }
 
   .sec1 .div1 .div3{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -30vw;
+  }
+
+  .sec1 .div1 .div4{
     display: flex;
     flex-direction: column;
     position: relative;
@@ -395,6 +439,13 @@
   }
 
   .sec1 .div1 .div3{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -40vw;
+  }
+
+  .sec1 .div1 .div4{
     display: flex;
     flex-direction: column;
     position: relative;
