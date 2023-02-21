@@ -209,7 +209,7 @@
 
   /*//////////MEDIA QUIERIES//////////*/
 
-  @media (min-width: 1024px){
+  @media (max-width: 2560px) and (min-width: 1024px){
     .header li {
       float: left;
     }
@@ -224,8 +224,91 @@
     .header .menu-icon {
       display: none;
     }
-
-    section{
-      width: 100%;
+    section div img{
+      margin-left: 40%;
     }
-}
+  }
+
+  @media (max-width: 1023px) and (min-width: 768px){
+    .listitem{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(94, 81, 152);
+      z-index: 9999;
+      width: 100%;
+    }  
+
+    .header li{
+      /* float: left; */
+      z-index: 9999;
+    }
+
+    .header li a {
+      padding: 20px 30px;
+      /* margin: 0 300px 0 0; */
+      display: block;
+      z-index: 9999;
+      color: red;
+    } 
+    section div img{
+      margin-left: 35%;
+    }
+  }
+
+  @media (max-width: 767px) and (min-width: 425px){
+    .listitem{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(94, 81, 152);
+      z-index: 9999;
+      width: 100%;
+    }  
+
+    .header li{
+      /* float: left; */
+      z-index: 9999;
+    }
+
+    .header li a {
+      padding: 20px 30px;
+      /* margin: 0 300px 0 0; */
+      display: block;
+      z-index: 9999;
+      color: red;
+    } 
+    section div img{
+      margin-left: 30%;
+    }
+  }
+
+  @media (max-width: 424px) and (min-width: 375px){
+    .listitem{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(94, 81, 152);
+      z-index: 9999;
+      width: 100%;
+    }  
+
+    .header li{
+      /* float: left; */
+      z-index: 9999;
+    }
+
+    .header li a {
+      padding: 20px 30px;
+      /* margin: 0 300px 0 0; */
+      display: block;
+      z-index: 9999;
+      color: red;
+    } 
+    section div img{
+      margin-left: 30%;
+    }
+  }
